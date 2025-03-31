@@ -1,0 +1,121 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 20% 98%;
+    --foreground: 222 20% 18%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 20% 18%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 20% 18%;
+
+    --primary: 174 48% 46%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 36 91% 64%;
+    --secondary-foreground: 222 20% 18%;
+
+    --muted: 210 20% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 265 45% 56%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 222 84% 48%;
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 222 20% 18%;
+    --foreground: 210 40% 98%;
+
+    --card: 222 20% 18%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 20% 18%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 174 48% 46%;
+    --primary-foreground: 222 20% 18%;
+
+    --secondary: 36 91% 64%;
+    --secondary-foreground: 222 20% 18%;
+
+    --muted: 217 33% 18%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 265 45% 56%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217 33% 25%;
+    --input: 217 33% 25%;
+    --ring: 213 27% 84%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+
+  h4 {
+    @apply text-xl md:text-2xl;
+  }
+  
+  .hero-pattern {
+    background-color: #F8F9FA;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%233CAEA3' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-teal-400 hover:bg-teal-500 text-white font-medium py-2 px-6 rounded-full transition-all shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-teal-400 focus:ring-opacity-50;
+  }
+  
+  .btn-secondary {
+    @apply bg-orange-300 hover:bg-orange-400 text-gray-800 font-medium py-2 px-6 rounded-full transition-all shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-orange-300 focus:ring-opacity-50;
+  }
+  
+  .btn-outline {
+    @apply border border-teal-400 text-teal-400 hover:bg-teal-50 font-medium py-2 px-6 rounded-full transition-all focus:outline-none focus:ring-2 focus:ring-teal-400 focus:ring-opacity-50;
+  }
+  
+  .card {
+    @apply bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow overflow-hidden;
+  }
+}
