@@ -40,7 +40,7 @@ Make sure you have the following installed:
 ### Installation
 
 # Clone the repository
-git clone https://github.com/MaheshT18/kinderaid-platform-main.git
+git clone https://github.com/MaheshT18/Donation-kinderaid-platform
 
 
 # Install dependencies
