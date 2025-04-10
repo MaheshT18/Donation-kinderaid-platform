@@ -65,6 +65,14 @@ If you’d like to contribute, feel free to fork the repository and submit a pul
 
 ---
 
+## 🎬 Project Demo Video
+
+Watch the working demo of **Donation-Kinderaid-Platform** in action! 
+
+https://github.com/user-attachments/assets/a2e01537-7c21-422e-b75b-c9658ee93916
+
+---
+
 ## ⭐ Show Some Love
 If you like this project, don’t forget to ⭐ the repo!  
 
